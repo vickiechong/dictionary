@@ -14,7 +14,7 @@ export default function Dictonary() {
   }
   return (
     <div className="Dictionary row justify-content-center">
-      <div className="col-6 ">
+      <div className="col-4 ">
         <form className="form-group has-search" onSubmit={handlesearch}>
           <span className="fa fa-search form-control-feedback"></span>
           <input
