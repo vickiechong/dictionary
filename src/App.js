@@ -1,15 +1,20 @@
 import React from "react";
 import "./App.css";
 
+import Dictionary from "./Dictionary";
+
 export default function App() {
   return (
     <div className="App">
-      <header className="App-header">Dictionary Search</header>
-      <p className="credits">
-        Open-sourced by
-        <a href="https://github.com/vickiechong/dictionary"> Github </a>, and
-        hosted on Netify, coded by Vickie Chong{" "}
-      </p>
+      <div className="container">
+        <header className="App-header">Dictionary Search</header>
+        <Dictionary />
+        <footer className="credits">
+          Open-sourced by
+          <a href="https://github.com/vickiechong/dictionary"> Github </a>, and
+          hosted on Netify, coded by Vickie Chong{" "}
+        </footer>
+      </div>
     </div>
   );
 }
