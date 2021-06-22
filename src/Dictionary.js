@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./Dictionary.css";
 
 export default function Dictonary() {
@@ -6,12 +7,22 @@ export default function Dictonary() {
 
   function handlesearch(event) {
     event.preventDefault();
-    alert(`${searchword}`);
+
+    let apiurl = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${searchword}`;
+
+    axios.get(apiurl).then(handleResponse);
   }
 
   function inputsearchword(event) {
     setSearchword(event.target.value);
   }
+
+  function handleResponse(response) {
+    console.log(response);
+  }
+
+  // api documentation -  https://dictionaryapi.dev/
+
   return (
     <div className="Dictionary row justify-content-center">
       <div className="col-4 ">
