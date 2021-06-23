@@ -50,11 +50,6 @@ export default function Dictonary() {
               <h1 className="text-capitalize">
                 <strong>{results.word}</strong>
               </h1>
-              <em>{results.phonetics[0].text}</em>{" "}
-              <span>
-                <a href={results.phonetics[0].audio}> link </a>
-              </span>
-              {""}
             </div>
           </div>
         </div>
