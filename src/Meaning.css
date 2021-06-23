@@ -1,0 +1,20 @@
+.Meaning {
+  text-align: left;
+}
+
+.Meaning .wordtype {
+  margin-bottom: 22px;
+}
+
+.Meaning .worddefinitionlist {
+  padding-left: 16px;
+}
+
+.Meaning .worddefinition {
+  padding-left: 16px;
+}
+
+.Meaning .wordexample {
+  color: grey;
+  margin-left: 30px;
+}

@@ -8,7 +8,7 @@ export default function Results({ ...results }) {
   if ({ ...results }) {
     return (
       <div className="Results">
-        <h1 className="text-capitalize">{{ ...results }.word}</h1>
+        <h1 className="worddisplay">{{ ...results }.word}</h1>
 
         {{ ...results }.phonetics.map((phonetic, index) => {
           return (
@@ -17,7 +17,7 @@ export default function Results({ ...results }) {
             </div>
           );
         })}
-
+        <br />
         {{ ...results }.meanings.map((meaning, index) => {
           return (
             <div key={index}>

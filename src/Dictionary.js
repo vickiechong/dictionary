@@ -34,6 +34,7 @@ export default function Dictonary() {
         type="search"
         placeholder="Search for a word"
         onChange={inputsearchword}
+        defaultValue={searchword}
       />
     </form>
   );
@@ -42,25 +43,30 @@ export default function Dictonary() {
     return (
       <div>
         <div className="Dictionary row justify-content-center">
-          <div className="col-4 justify-content-center">{loadform}</div>
+          <h1 className="m-2 searchheader">What would you like to know?</h1>
+
+          <div className="col-4 m-3 justify-content-center align-middle">
+            {loadform}
+          </div>
           <br />
           <br />
-          <div className="Displayresults row justify-content-center">
-            <div className="col-6 ">
-              <h1 className="text-capitalize">
-                <strong>{results.word}</strong>
-              </h1>
+          <div className="Displayresults row justify-content-center ">
+            <div className="col-10 ">
+              <br />
+              <Results {...results} />
             </div>
           </div>
         </div>
-        <br />
-        <Results {...results} />
       </div>
     );
   } else {
     return (
       <div className="Dictionary row justify-content-center">
-        <div className="col-4 justify-content-center">{loadform}</div>
+        <h1 className="m-2 searchheader">What would you like to know?</h1>
+
+        <div className="col-4 m-3 justify-content-center align-middle">
+          {loadform}
+        </div>
       </div>
     );
   }

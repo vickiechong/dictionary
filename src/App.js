@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">Dictionary Search</header>
+        <header className="App-header">Dictionary</header>
         <Dictionary />
         <footer className="credits">
           Open-sourced by
