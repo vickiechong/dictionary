@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Synonyms({ ...definition }) {
   console.log({ ...definition.synonyms });
-  debugger;
-  if ({ ...definition }) {
+
+  if ({ ...definition }.synonyms) {
     return (
-      <div>
+      <div className="Synonyms">
         {{ ...definition }.synonyms.map((word, index) => {
           return <div key={index}>{word}</div>;
         })}

@@ -11,8 +11,15 @@ export default function App() {
         <Dictionary />
         <footer className="credits">
           Open-sourced by
-          <a href="https://github.com/vickiechong/dictionary"> Github </a>, and
-          hosted on Netify, coded by Vickie Chong{" "}
+          <a
+            href="https://github.com/vickiechong/dictionary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Github{" "}
+          </a>
+          , and hosted on Netify, coded by Vickie Chong{" "}
         </footer>
       </div>
     </div>
