@@ -8,7 +8,7 @@ export default function Phonetics({ ...phonetic }) {
         <a href={{ ...phonetic }.audio} target="_blank" rel="noreferrer">
           <i className="fas fa-volume-up audioicon"></i>
         </a>
-        <em className="ms-3">{{ ...phonetic }.text}</em>{" "}
+        <em className="ms-3 phonetictext">{{ ...phonetic }.text}</em>{" "}
       </div>
     );
   } else {

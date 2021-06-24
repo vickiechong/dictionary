@@ -30,7 +30,7 @@ export default function Dictonary() {
     <form className="form-group has-search" onSubmit={handlesearch}>
       <span className="fa fa-search form-control-feedback"></span>
       <input
-        className="form-control col-form-label-lg"
+        className="form-control col-form-label-lg searchbar"
         type="search"
         placeholder="Search for a word"
         onChange={inputsearchword}
@@ -42,7 +42,7 @@ export default function Dictonary() {
   if (results) {
     return (
       <div>
-        <div className="Dictionary row justify-content-center">
+        <div className="Dictionaryblock row justify-content-center">
           <h1 className="m-2 searchheader">What would you like to know?</h1>
 
           <div className="col-4 m-3 justify-content-center align-middle">
@@ -61,7 +61,7 @@ export default function Dictonary() {
     );
   } else {
     return (
-      <div className="Dictionary row justify-content-center">
+      <div className="Dictionaryblock row justify-content-center">
         <h1 className="m-2 searchheader">What would you like to know?</h1>
 
         <div className="col-4 m-3 justify-content-center align-middle">

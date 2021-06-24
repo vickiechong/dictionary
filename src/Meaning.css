@@ -4,6 +4,7 @@
 
 .Meaning .wordtype {
   margin-bottom: 22px;
+  color: #f9c484;
 }
 
 .Meaning .worddefinitionlist {
@@ -12,6 +13,7 @@
 
 .Meaning .worddefinition {
   padding-left: 16px;
+  color: #f6dfc3;
 }
 
 .Meaning .wordexample {

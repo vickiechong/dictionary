@@ -15,6 +15,7 @@ export default function App() {
             href="https://github.com/vickiechong/dictionary"
             target="_blank"
             rel="noreferrer"
+            className="Githublink"
           >
             {" "}
             Github{" "}

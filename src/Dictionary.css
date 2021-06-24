@@ -18,3 +18,25 @@
 .searchheader {
   font-size: 26px;
 }
+
+.Dictionaryblock {
+  border-radius: 24px;
+  padding: 35px;
+  background-color: #292323;
+}
+
+.searchheader {
+  color: #f6dfc3b5;
+  font-size: 20px;
+}
+
+.searchbar {
+  border-radius: 12px;
+}
+
+.Displayresults {
+  background-color: #1f1e1d;
+  border-radius: 34px;
+  max-width: 1100px;
+  padding: 15px;
+}

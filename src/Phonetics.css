@@ -1,3 +1,18 @@
 .audioicon {
   vertical-align: middle;
+  color: #f9edd8;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.phonetictext {
+  color: #ddd;
+}
+
+.Phonetics {
+  margin: 10px auto;
 }
