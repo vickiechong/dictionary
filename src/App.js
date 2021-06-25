@@ -20,7 +20,17 @@ export default function App() {
             {" "}
             Github{" "}
           </a>
-          , and hosted on Netify, coded by Vickie Chong <br />
+          , and hosted on Netify, coded by
+          <a
+            href="https://www.linkedin.com/in/vickie-chong-55360725/"
+            target="_blank"
+            rel="noreferrer"
+            className="creditlink"
+          >
+            {" "}
+            Vickie Chong
+          </a>
+          <br />
           Photos provided by
           <a
             href="https://www.pexels.com"

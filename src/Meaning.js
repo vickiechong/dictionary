@@ -20,7 +20,7 @@ export default function Meaning(props) {
                 <em>
                   <small>
                     {definition.example
-                      ? `Example : ${definition.example}`
+                      ? `Example : " ${definition.example} " `
                       : ""}
                   </small>
                 </em>
