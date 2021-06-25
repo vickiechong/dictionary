@@ -14,6 +14,7 @@ export default function Photos({ ...Photos }) {
                 <a href={photo.url} target="_blank" rel="noreferrer">
                   <img
                     src={photo.src.landscape}
+                    alt={photo.url}
                     width="200px"
                     className="images"
                   ></img>
