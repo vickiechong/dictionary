@@ -1,8 +1,8 @@
 import React from "react";
 import "./Photos.css";
 
-export default function Photos({ ...Photos }) {
-  let photoresults = { ...Photos }.data.photos;
+export default function Photos(props) {
+  let photoresults = props.data.photos;
 
   if (photoresults) {
     return (
@@ -15,8 +15,7 @@ export default function Photos({ ...Photos }) {
                   <img
                     src={photo.src.landscape}
                     alt={photo.url}
-                    width="200px"
-                    className="images"
+                    className="images img-fluid"
                   ></img>
                 </a>
               </div>
