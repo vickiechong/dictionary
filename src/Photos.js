@@ -2,13 +2,11 @@ import React from "react";
 import "./Photos.css";
 
 export default function Photos(props) {
-  let photoresults = props.photos.data.photos;
-
-  if (photoresults) {
+  if (props.photos.data.photos) {
     return (
       <div className="Photos">
         <div className="row">
-          {photoresults.map((photo, index) => {
+          {props.photos.data.photos.map((photo, index) => {
             return (
               <div className="col-4" key={index}>
                 <a href={photo.url} target="_blank" rel="noreferrer">
