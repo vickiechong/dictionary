@@ -15,12 +15,22 @@ export default function App() {
             href="https://github.com/vickiechong/dictionary"
             target="_blank"
             rel="noreferrer"
-            className="Githublink"
+            className="creditlink"
           >
             {" "}
             Github{" "}
           </a>
-          , and hosted on Netify, coded by Vickie Chong{" "}
+          , and hosted on Netify, coded by Vickie Chong <br />
+          Photos provided by
+          <a
+            href="https://www.pexels.com"
+            target="_blank"
+            rel="noreferrer"
+            className="creditlink"
+          >
+            {" "}
+            Pexels{" "}
+          </a>
         </footer>
       </div>
     </div>

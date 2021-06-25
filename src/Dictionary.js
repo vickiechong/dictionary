@@ -3,10 +3,12 @@ import axios from "axios";
 import "./Dictionary.css";
 
 import Results from "./Results";
+import Photos from "./Photos";
 
 export default function Dictonary() {
   const [searchword, setSearchword] = useState("");
   const [results, setResults] = useState(null);
+  const [photos, setPhotos] = useState(null);
 
   function handlesearch(event) {
     event.preventDefault();
@@ -14,16 +16,31 @@ export default function Dictonary() {
     // api documentation -  https://dictionaryapi.dev/
     let apiurl = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${searchword}`;
 
-    axios.get(apiurl).then(handleResponse);
+    axios.get(apiurl).then(handleDictionaryResponse);
+
+    // api documentation for photos - https://www.pexels.com/api/documentation/
+
+    let pexelheader = {
+      Authorization: `Bearer 563492ad6f91700001000001edc229d0480b4948b959c401f753e2b2`,
+    };
+
+    let pexelapi = `https://api.pexels.com/v1/search?query=${searchword}&per_page=6`;
+
+    axios.get(pexelapi, { headers: pexelheader }).then(handlePhotoResponse);
   }
 
   function inputsearchword(event) {
     setSearchword(event.target.value);
   }
 
-  function handleResponse(response) {
+  function handleDictionaryResponse(response) {
     console.log(response.data[0]);
     setResults(response.data[0]);
+  }
+
+  function handlePhotoResponse(response) {
+    console.log(response);
+    setPhotos(response);
   }
 
   let loadform = (
@@ -54,6 +71,7 @@ export default function Dictonary() {
             <div className="col-10 ">
               <br />
               <Results {...results} />
+              <Photos {...photos} />
             </div>
           </div>
         </div>
