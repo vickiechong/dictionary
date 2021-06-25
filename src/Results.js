@@ -4,26 +4,24 @@ import Phonetics from "./Phonetics";
 
 import "./Results.css";
 
-export default function Results({ ...results }) {
-  console.log({ ...results });
-
-  if ({ ...results }) {
+export default function Results(props) {
+  if (props.results) {
     return (
       <div className="Results">
-        <h1 className="worddisplay">{{ ...results }.word}</h1>
+        <h1 className="worddisplay">{props.results.word}</h1>
 
-        {{ ...results }.phonetics.map((phonetic, index) => {
+        {props.results.phonetics.map((phonetic, index) => {
           return (
             <div key={index}>
-              <Phonetics {...phonetic} />
+              <Phonetics phonetic={phonetic} />
             </div>
           );
         })}
         <br />
-        {{ ...results }.meanings.map((meaning, index) => {
+        {props.results.meanings.map((meaning, index) => {
           return (
             <div key={index}>
-              <Meaning {...meaning} />
+              <Meaning meaning={meaning} />
             </div>
           );
         })}

@@ -2,15 +2,15 @@ import React from "react";
 
 import "./Synonyms.css";
 
-export default function Synonyms({ ...definition }) {
-  console.log({ ...definition.synonyms });
+export default function Synonyms(props) {
+  console.log(props.synonyms);
 
-  if ({ ...definition }.synonyms) {
+  if (props.synonyms.synonyms) {
     return (
       <div className="Synonymsblock">
         Synonyms:
         <span className="ms-2">
-          {{ ...definition }.synonyms.map((word, index) => {
+          {props.synonyms.synonyms.map((word, index) => {
             return (
               <div className="Synonymswords" key={index}>
                 {(index ? " , " : "") + word + "  "}

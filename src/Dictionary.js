@@ -21,7 +21,7 @@ export default function Dictonary() {
     // api documentation for photos - https://www.pexels.com/api/documentation/
 
     let pexelheader = {
-      Authorization: `Bearer 563492ad6f91700001000001edc229d0480b4948b959c401f753e2b2`,
+      Authorization: `Bearer 563492ad6f917000010000014297c415c7c44b2491f62fce51053254`,
     };
 
     let pexelapi = `https://api.pexels.com/v1/search?query=${searchword}&per_page=6`;
@@ -70,8 +70,8 @@ export default function Dictonary() {
           <div className="Displayresults row justify-content-center ">
             <div className="col-10 ">
               <br />
-              <Results {...results} />
-              <Photos {...photos} />
+              <Results results={results} />
+              <Photos photos={photos} />
             </div>
           </div>
         </div>

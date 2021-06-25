@@ -2,7 +2,7 @@ import React from "react";
 import "./Photos.css";
 
 export default function Photos(props) {
-  let photoresults = props.data.photos;
+  let photoresults = props.photos.data.photos;
 
   if (photoresults) {
     return (

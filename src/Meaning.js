@@ -3,12 +3,12 @@ import Synonyms from "./Synonyms";
 
 import "./Meaning.css";
 
-export default function Meaning({ ...meaning }) {
-  if ({ ...meaning }) {
+export default function Meaning(props) {
+  if (props.meaning) {
     return (
       <div className="Meaning">
-        <h2 className="wordtype">{{ ...meaning }.partOfSpeech}</h2>
-        {{ ...meaning }.definitions.map((definition, index) => {
+        <h2 className="wordtype">{props.meaning.partOfSpeech}</h2>
+        {props.meaning.definitions.map((definition, index) => {
           return (
             <div key={index}>
               <ol className="worddefinitionlist">
@@ -18,11 +18,15 @@ export default function Meaning({ ...meaning }) {
               </ol>
               <p className="wordexample">
                 <em>
-                  <small>Example: " {definition.example} "</small>
+                  <small>
+                    {definition.example
+                      ? `Example : ${definition.example}`
+                      : ""}
+                  </small>
                 </em>
               </p>
               <br />
-              <Synonyms {...definition} />
+              <Synonyms synonyms={definition} />
 
               <hr />
             </div>
