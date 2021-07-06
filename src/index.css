@@ -4,10 +4,10 @@ body {
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
 
-  height: 100vh;
+  height: calc(100vh - 15px);
   width: 100%;
 
-  background-image: url(https://img.theculturetrip.com/1440x/smart/wp-content/uploads/2017/11/tianjin-binhai-library-china-6.jpg);
+  background-image: url(https://miro.medium.com/max/2000/1*2DJCfkymg3C3hU7_nv7jQg.jpeg);
   background-size: cover;
 }
 
@@ -18,5 +18,5 @@ body::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: #fbead485;
+  background-color: #fbead4a1;
 }

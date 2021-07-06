@@ -18,7 +18,7 @@
 
 .credits {
   text-align: center;
-  color: rgb(85, 85, 85);
+  color: rgb(49, 49, 49);
   font-size: 11px;
   margin: 30px 0;
 }
@@ -26,9 +26,9 @@
 .creditlink {
   text-decoration: none;
   font-weight: 500;
-  color: #292323;
+  color: rgb(98 72 22);
 }
 
 .creditlink:hover {
-  color: #f1a432;
+  color: #b37a26;
 }
