@@ -7,13 +7,14 @@ body {
   height: calc(100vh - 15px);
   width: 100%;
 
-  background-image: url(https://miro.medium.com/max/2000/1*2DJCfkymg3C3hU7_nv7jQg.jpeg);
+  background-image: url("./img/library.jpeg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
   bottom: 0px;
